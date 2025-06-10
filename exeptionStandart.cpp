@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Awal Program" << endl;
+    cout << "Awal Program" << endl; 
     
     try
     {
@@ -19,7 +19,9 @@ int main()
     }
     catch(exception& e)
     {
+        // penangkap menggunakan objek exception
         cout << e.what() << endl;
+        /* akan dieksekusi karena array data hanya memiliki 3 elemen*/
     }
     cout << "Baris Program Yang Terakhir" << endl;
     return 0;
