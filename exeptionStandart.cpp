@@ -1,0 +1,23 @@
+#include <iostream>
+#include <exception>
+#include <array>
+using namespace std;
+
+int main()
+{
+    cout << "Awal Program" << endl;
+    
+    try
+    {
+        array<int, 3> data = {10, 20, 25};
+        //int data[3] = {10, 20, 25};
+        //pesan array integer 3 elemen
+        cout << data.at(5) << endl;
+        //memanggil array elemen ke 5
+    }
+    catch(exception& e)
+    {
+        cout << e.what() << endl;
+    }
+    
+}
