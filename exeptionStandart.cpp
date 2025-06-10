@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Awal Program" << endl; 
+    cout << "Awal Program" << endl; // penanda 1:...
     
     try
     {
@@ -24,5 +24,6 @@ int main()
         /* akan dieksekusi karena array data hanya memiliki 3 elemen*/
     }
     cout << "Baris Program Yang Terakhir" << endl;
+    /* penanda 2: bahwa program berjalan tanpa berhenti meskipun terjadi kesalahan*/
     return 0;
 }
