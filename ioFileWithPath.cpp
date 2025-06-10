@@ -33,17 +33,22 @@ int main(){
 
     ifstream infile;
 
+    // menunjukkan ke sebuah file
     infile.open(NamaFile + ".txt", ios::in);
 
     cout << endl << ">= Membuka dan membaca file " << endl;
     if (infile.is_open())
     {
+        // melakukan perulangan setiap baris
         while (getline(infile, baris))
         {
+            // dan menampilkan di sini
             cout << baris << '\n';
         }
+        // tutup file tersebut setelah selesai
         infile.close();
     }
+    // jika tidak ditemukan file maka akan menampilkan ini
     else cout << "Unable to open file";
     return 0;
 }
